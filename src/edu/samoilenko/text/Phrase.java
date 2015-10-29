@@ -9,19 +9,24 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class Phrase {
-	private Word [] phrase;
-	public Phrase() {}
-	public Phrase(Word[]phrase) {
+	private Word[] phrase;
+
+	public Phrase() {
+	}
+
+	public Phrase(Word[] phrase) {
 		this.phrase = phrase;
 	}
+
 	public String toString() {
 		return phrase.toString();
 	}
-	public boolean findWordInPhrase(Word w){
-		return Arrays.asList(phrase).stream().anyMatch(s->s.equals(w));		
+
+	public boolean findWordInPhrase(Word w) {
+		return Arrays.asList(phrase).stream().anyMatch(s -> s.equals(w));
 	}
-	 
-	public int hasCode(){
+
+	public int hasCode() {
 		return Arrays.hashCode(phrase);
 	}
 }

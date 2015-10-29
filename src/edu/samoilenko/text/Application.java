@@ -9,14 +9,12 @@ public class Application {
 				+ "\"Dumbledore — you can't. I've been watching them all day."
 				+ " You couldn't find two people who are less like us. "
 				+ "And they've got this son — I saw him kicking his mother all the way up the street,"
-				+ " screaming for sweets. " + "Harry Potter come and live here!\""
-						+ "\"Hello Masha\"");
-		PhraseMatcher matcher =new PhraseMatcher();
+				+ " screaming for sweets. " + "Harry Potter come and live here!\"" + "\"Hello Masha\"");
+		PhraseMatcher matcher = new PhraseMatcher();
 		matcher.setText(t);
 		matcher.setW(new Word("dumbledore"));
-		matcher.start(); 
-		
+		matcher.start();
+
 	}
-		
 
 }
